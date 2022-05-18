@@ -10,12 +10,12 @@ print('Задача 6. Успеваемость в классе')
 # которая получает список оценок - N чисел - и выводит на экран сообщение о том, 
 # кого сегодня больше: отличников, хорошистов или троечников.
 
-stunets_num = int(input('Введите число: '))
+students_num = int(input('Введите число: '))
 A = 0
 B = 0
 C = 0
-for number in range(1, stunets_num + 1):
-mark = int(input(f'Введите оценку {stunets_num} ученика: '))
+for number in range(1, students_num + 1):
+  mark = int(input(f'Введите оценку {number} ученика: '))
   if mark == 5:
     A += 1
   elif mark == 4:
