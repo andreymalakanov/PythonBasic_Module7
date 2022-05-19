@@ -9,3 +9,13 @@ print('Задача 9. ...Теперь можно посчитать и свою
 # 
 # Пользователь вводит 10 чисел.
 # Напишите программу, которая проверяет, упорядочены ли они по возрастанию.
+salary = 0
+for number in range(1, 11):
+  salary_new = int(input('Введите зарплату: '))
+  if salary_new > salary:
+    salary = salary_new
+    print('Зарплата возрастает')
+  elif salary_new == salary:
+    print('Зарплата не изменилась')
+  else:
+    print('Зарплата падает')

@@ -11,3 +11,14 @@ print('Задача 10.')
 # далее еще N − 1 чисел: 
 # номера оставшихся карточек (различные числа от 1 до N).
 # Программа должна вывести номер потерянной карточки.
+
+N = int(input('Введите число карточек: '))
+summ = 0
+inp_summ = 0
+for number in range(1, N):
+  summ += number
+  print(f'========== Ввод №{number} ==========')
+  inp_num = int(input(f'Введите номер известной карточки из {N}: '))
+  inp_summ += inp_num
+missing_num = summ + N - inp_summ
+print('Пропала карточка', missing_num)
